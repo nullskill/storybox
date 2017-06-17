@@ -12,13 +12,17 @@ wget -O - "https://raw.githubusercontent.com/isuvorov/storybox/master/docs/quick
 
 ## Getting Started
 
+0.
+Install file-loader package:
+`npm install --save-dev file-loader`
+
 1.
 Install storybox package:
 
 `yarn add --dev storybox` or
 `npm install --save-dev storybox`
 
-adnd
+and
 
 1.a
 Install Storybook 2.35.3 by Kadira
