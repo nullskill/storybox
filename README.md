@@ -16,6 +16,9 @@ wget -O - "https://raw.githubusercontent.com/isuvorov/storybox/master/docs/quick
 Install file-loader package:
 `npm install --save-dev file-loader`
 
+Install glob-loader package (instead of `glob`):
+`npm install --save-dev glob-loader`
+
 1.
 Install storybox package:
 
