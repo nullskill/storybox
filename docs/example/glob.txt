@@ -1,1 +1,1 @@
-./../src/**/@(*.story.js|.story.js|*.story.jsx|.story.jsx)
+../src/**/@(*.story.js|.story.js|*.story.jsx|.story.jsx)
