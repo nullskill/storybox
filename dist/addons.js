@@ -1,0 +1,10 @@
+'use strict';
+
+require('@kadira/storybook/addons');
+
+require('@kadira/storybook-addon-knobs/register');
+
+require('@kadira/storybook-addon-options/register');
+
+require('react-storybook-addon-utils/register');
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9hZGRvbnMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFDQTs7QUFDQTs7QUFFQSIsImZpbGUiOiJhZGRvbnMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgJ0BrYWRpcmEvc3Rvcnlib29rL2FkZG9ucyc7XHJcbmltcG9ydCAnQGthZGlyYS9zdG9yeWJvb2stYWRkb24ta25vYnMvcmVnaXN0ZXInO1xyXG5pbXBvcnQgJ0BrYWRpcmEvc3Rvcnlib29rLWFkZG9uLW9wdGlvbnMvcmVnaXN0ZXInO1xyXG4vLyBpbXBvcnQgJ3JlYWN0LXN0b3J5Ym9vay1hZGRvbi1iYWNrZ3JvdW5kcy9yZWdpc3Rlcic7XHJcbmltcG9ydCAncmVhY3Qtc3Rvcnlib29rLWFkZG9uLXV0aWxzL3JlZ2lzdGVyJztcclxuIl19
