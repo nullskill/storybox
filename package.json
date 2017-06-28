@@ -28,7 +28,7 @@
   "dependencies": {
     "react-storybook-addon-info": "3.5.0",
     "@kadira/storybook": "2.35.3",
-    "@kadira/storybook-addon-knobs": "1.7.1",
+    "@kadira/storybook-addon-knobs": "github:nullskill/storybook-addon-knobs",
     "@kadira/storybook-addon-options": "1.0.1",
     "babel-core": "6.9.0",
     "react": "15.6.1",
