@@ -26,7 +26,7 @@
     "reactjs"
   ],
   "dependencies": {
-    "react-storybook-addon-info": "3.5.0",
+    "react-storybook-addon-info": "github:nullskill/react-storybook-addon-info",
     "@kadira/storybook": "2.35.3",
     "@kadira/storybook-addon-knobs": "github:nullskill/storybook-addon-knobs",
     "@kadira/storybook-addon-options": "1.0.1",
@@ -34,7 +34,7 @@
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "prop-types": "15.5.10",
-    "react-storybook-addon-utils": "0.1.2"
+    "react-storybook-addon-utils": "github:nullskill/react-storybook-addon-utils"
   },
   "devDependencies": {
     "babel-cli": "6.23.0",

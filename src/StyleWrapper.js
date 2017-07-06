@@ -1,21 +1,22 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 export default class StyleWrapper extends Component {
   static propTypes = {
-    children: PropTypes.element.isRequired,
+    children: PropTypes.element.isRequired
   };
 
   static childContextTypes = {
-    insertCss: PropTypes.func.isRequired,
+    insertCss: PropTypes.func.isRequired
   };
 
-  insertCss = (styles) => {
+  insertCss = styles => {
     return styles._insertCss();
-  }
+  };
 
   getChildContext() {
     return {
-      insertCss: this.insertCss,
+      insertCss: this.insertCss
     };
   }
 
