@@ -34,7 +34,7 @@
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "prop-types": "15.5.10",
-    "react-storybook-addon-utils": "git+https://github.com/nullskill/react-storybook-addon-utils"
+    "react-storybook-addon-utils": "github:nullskill/react-storybook-addon-utils"
   },
   "devDependencies": {
     "babel-cli": "6.23.0",
