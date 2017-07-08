@@ -10,11 +10,16 @@ import deepmerge from "deepmerge";
 
 let conf = defaultConfig;
 function config(newConfig = {}) {
-  // if (module.hot) {
-  //   module.hot.accept();
-  // }
-  
-  // const
+  if (module.hot && module.hot.status() === 'apply') {
+    if (newConfig.modules) {
+      // console.log('changed modules', newConfig.modules);
+      module.hot.accept('.',
+        wrapModules(newConfig.modules, module)
+      );
+      return;
+    }
+  }
+
   conf = deepmerge(defaultConfig, newConfig, { arrayMerge: (d, s) => s });
   conf.options && setOptionsAddon(conf.options);
   conf.knob && storybook.addDecorator(knob.withKnobs);
@@ -23,7 +28,7 @@ function config(newConfig = {}) {
   conf.isomorphicStyles &&
     storybook.addDecorator(story => <StyleWrapper children={story()} />);
   conf.info && storybook.setAddon(infoAddon);
-  conf.modules && wrapModules(conf.modules, module);  
+  conf.modules && wrapModules(conf.modules, module);
 }
 
 const storiesOf = (...args) => {
@@ -43,7 +48,7 @@ const storiesOf = (...args) => {
   res.addHtml = html => {
     // console.log({html});
     return res.addDecorator(story => (
-      <div className="add-html-from-storybox">
+      <div>
         {html}
         {story()}
       </div>
